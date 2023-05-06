@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e3f688861b564da985f58f3190247745" Name="Diagram1">
+        <EntityTypeShape EntityType="Assignment2Model.Client_Master" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Assignment2Model.Product_Master" Width="1.5" PointX="3" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Assignment2Model.Sales_Order" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="Assignment2Model.Sales_Order_Details" Width="1.5" PointX="5.25" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Assignment2Model.Salesman_Master" Width="1.5" PointX="0.75" PointY="5" IsExpanded="true" />
+        <AssociationConnector Association="Assignment2Model.FK_To_ClientMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="Assignment2Model.FK_to_ProductMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="Assignment2Model.FK_to_SalesmanMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="Assignment2Model.FK_to_SalesOrder" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
