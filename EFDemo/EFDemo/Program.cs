@@ -10,9 +10,11 @@ namespace EFDemo
     {
         static void Main(string[] args)
         {
-            using (var context = new Assignment2Entities())
+
+            //Insert Data
+           /* using (var context = new Assignment2Entities())
             {
-                /* var std = new Client_Master()
+                var std = new Client_Master()
                 {
                     ClientNo= "C00002",
                     Name = "Bill",
@@ -22,18 +24,32 @@ namespace EFDemo
                     State="Kerala",
                     BalDue=40000,
                     Phone_No=9876543210
-                }; */
+                };
+                context.Client_Master.Add(std); 
+                context.SaveChanges();
+            }
 
+            //Update Data
+            using (var context = new Assignment2Entities())
+            {
+                var std = context.Client_Master.First<Client_Master>();
+                std.Name = "Steve";
+                context.SaveChanges();
+            }
 
-                var std = context.Client_Master.Where(s =>s.Name)<Client_Master>();
-                //std.Name = "Steve";
+            //Update data in a particular row
+            using (var ctx = new Assignment2Entities())
+            {
+                var student = ctx.Client_Master
+                                .Where(s => s.Name == "Bill")
+                                .FirstOrDefault<Client_Master>();
+            } */
 
+            //Deleting Data
+            using (var context = new Assignment2Entities())
+            {
                 var std = context.Client_Master.First<Client_Master>();
                 context.Client_Master.Remove(std);
-
-                context.SaveChanges();
-
-                //context.Client_Master.Add(std);     --Insert
 
                 context.SaveChanges();
             }
